@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: local
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: local
+
+  datasource:
+    username: musicbot
+    password: musicbot
+    url: jdbc:mysql://localhost:4500/musicbot
+
+  jpa:
+    open-in-view: false
